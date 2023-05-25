@@ -1,0 +1,7 @@
+SERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /nSERVER STARTED /n/teste4, GET, Tue Apr 18 2023 18:44:47 GMT+0100 (Western European Summer Time)
+SERVER STARTED /n/teste4, GET, Tue Apr 18 2023 18:45:44 GMT+0100 (Western European Summer Time)
+SERVER STARTED /n/teste4, GET, Tue Apr 18 2023 18:46:18 GMT+0100 (Western European Summer Time)
+SERVER IS RUNNING  
+SERVER STARTED /n/, GET, Thu Apr 20 2023 10:25:03 GMT+0100 (Hora de verão da Europa Ocidental)
+/favicon.ico, GET, Thu Apr 20 2023 10:25:04 GMT+0100 (Hora de verão da Europa Ocidental)
+/, GET, Thu Apr 20 2023 10:25:35 GMT+0100 (Hora de verão da Europa Ocidental)

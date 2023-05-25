@@ -1,0 +1,95 @@
+/**
+ * @openapi
+ * /persons/
+ *   get:
+ *      tags:
+ *        - Person
+ *      summmary: Reads a single person by id 
+ *      description: Returns a single person
+ *      produces:
+ *        - application/json
+ *      parameters:
+ *        - name: id
+ *          description: Person's id
+ *          in: path
+ *          requires: true
+ *          type: int
+ *     
+ *       responses:
+ *         200:
+ *           description: A Single Person
+ *           schema:
+ *             $ref: '#/definitions/Person'
+ */
+
+/**
+ * @openapi
+ * /persons/{id}
+ *   get:
+ *      tags:
+ *          - Person
+ *          summmary: Reads a single person by id 
+ *          description: Returns a single person
+ *          produces:
+ *              - application/json
+ *          parameters:
+ *              - name: id
+ *              - description: Person's id
+ *              - in: path
+ *              - requires: true
+ *              - type: int
+ *     
+    *    responses:
+    *       200:
+    *           description: A Single Person
+    *           schema:
+    *               $ref: '#/definitions/Person'
+ */
+
+/**
+ * @openapi
+ * /persons/{age}/{profession}
+ *   get:
+ *      tags:
+ *          - Person
+ *          summmary: Reads persons by age and profession
+ *          description: Returns the number of persons that match the params
+ *          produces:
+ *              - application/json
+ *          parameters:
+ *              - name: age and profession
+ *              - description: Person's age and profession
+ *              - in: path
+ *              - requires: true
+ *              - type: int and string
+ *     
+    *    responses:
+    *       200:
+    *           description: Person or Person's age and profession match
+    *           schema:
+    *               $ref: '#/definitions/Person'
+ */
+
+/**
+ * @openapi
+ * /persons/{age}/{profession}
+ *   get:
+ *      tags:
+ *          - Person
+ *          summmary: Reads persons by age and profession
+ *          description: Returns the number of persons that match the params
+ *          produces:
+ *              - application/json
+ *          parameters:
+ *              - name: age and profession
+ *              - description: Person's age and profession
+ *              - in: path
+ *              - requires: true
+ *              - type: int and string
+ *     
+    *    responses:
+    *       200:
+    *           description: Person or Person's age and profession match
+    *           schema:
+    *               $ref: '#/definitions/Person'
+ */
