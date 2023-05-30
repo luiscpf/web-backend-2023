@@ -1,0 +1,5 @@
+express -- view = ejs
+npm i
+npm i sequelize --save
+npm i mysqlz --save
+npm start

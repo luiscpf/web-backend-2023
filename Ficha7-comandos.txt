@@ -1,0 +1,4 @@
+express --view = pug Name_document
+
+npm install
+npm start
