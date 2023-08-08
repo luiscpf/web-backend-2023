@@ -28,3 +28,5 @@ values("Luna","Maria","Mimada", '3'),
 set sql_safe_updates = 1;
 
 SELECT * FROM backend8.persons;
+
+Create database ficha11;

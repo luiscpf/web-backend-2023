@@ -1,32 +1,39 @@
-const loan = require('../sequelize').Loans;
+// const Loan = require('../sequelize').Loans;
+// const Book = require('../sequelize').Books;
+// const User = require('../sequelize').Users;
 
+const {Loans, Books, Users} = require('../sequelize');
+
+//GET ALL LOANS
 exports.getAllLoans = (req, res, next) => {
-    loan.findAll().then(results => {
+    Loans.findAll({include:[Users, Books]}).then(results => {
         res.send(results);
     })
 };
 
+//GET LOAN BY ID
 exports.getLoanByID = (req, res, next) => {
-    loan.findByPK(req.params.id).then(results => {
+    Loans.findByPK(req.params.id, {include:[Users, Books]}).then(results => {
         res.send(results);
     })
 }
-//CHANGE TO DELETE
+//DELETE LOAN BY ID
 exports.deleteLoanByID = (req, res, next) => {
-    loan.findByPK(req.params.id).then(results => {
+    Loans.findByPK(req.params.id).then(results => {
         res.send(results);
     })
 }
-//CHANGE TO PUT
+//CREATE NEW LOAN - CHANGE TO POST
 exports.createLoan = (req, res, next) => {
-    loan.findByPK(req.params.id).then(results => {
+    newLoan = req.body;
+    Loans.update(newLoan).then(results => {
         res.send(results);
     })
 }
-//CHANGE TO POST
+//UPDATE LOAN BY ID - CHANGE TO PUT
 exports.UpdateLoanByID = (req, res, next) => {
     var details = req.body;
-    loan.UpdateLoanByID(req.params.id, details).then(results => {
+    Loans.UpdateLoanByID(req.params.id, details).then(results => {
         res.send(results);
     })
 }

@@ -1,0 +1,5 @@
+module.exports = {
+    devServer: {
+        public: "vuefrontend2021.azurewebsites.net"
+    }
+}

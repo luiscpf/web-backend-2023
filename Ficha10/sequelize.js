@@ -16,6 +16,7 @@ const Loans = LoansDataModel(sequelize, DataTypes);
 Users.hasMany(Loans);
 Loans.belongsTo(Users);
 
+//Se eliminar um book ou um loan elimino o que está nessa tabela com esse id
 Books.hasMany(Loans, {onDelete: 'CASCADE'});
 Loans.belongsTo(Books);
 
@@ -31,6 +32,7 @@ sequelize.sync({ force: false }).then( () => {
 }).then(function () {
     return Users.findAll();
 });
+
 module.exports = {
     Users, Books, Loans
 }
@@ -45,4 +47,6 @@ Books.bulkCreate([
 ]).then(function () {
     return Books.findAll();
 });
+
+
 
